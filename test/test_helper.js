@@ -8,11 +8,8 @@ before((done) =>{
         });
 })
 
-// beforeEach((done) =>{
-//     mongoose.connection.collections.departments.drop(function(){
-//         mongoose.connection.collections.employees.drop(function(){
-//
-//         })
-//         done();
-//     });
-// });
+beforeEach((done) =>{
+    mongoose.connection.collections.fuel_options.drop(function(){
+        done();
+    });
+});

@@ -13,7 +13,7 @@ describe('Read fuel_option record test', () => {
     it('find a particular option', (done) => {
         Fuel_Option.findOne({_id: fuel._id})
             .then((fuel_option) => {
-                console.log(fuel_option);
+                //console.log(fuel_option);
                 assert(fuel_option.description === 'Full Tank Fill');
                 done();
             });

@@ -10,7 +10,7 @@ describe('Delete fuel_option record test', () => {
     });
 
 
-    it('Remove method on Department class', (done) => {
+    it('Remove method on fuel_option class', (done) => {
         Fuel_Option.remove({description: 'Full Tank Fill'})
             .then(() => {
                 Fuel_Option.findOne({description: 'Full Tank Fill'})
